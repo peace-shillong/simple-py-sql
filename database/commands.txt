@@ -1,0 +1,17 @@
+//Create the database 
+CREATE DATABASE company;
+
+//Use the database 
+Use company;
+
+//create the Employee table
+CREATE TABLE IF NOT EXISTS `employee` (
+  `emp_id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(512) NOT NULL,
+  `designation` varchar(100) NOT NULL,
+  `qualification` varchar(100) NOT NULL,
+  `dob` varchar(20) NOT NULL,
+  `address` varchar(1024) NOT NULL,
+  `gender` varchar(12) NOT NULL,
+  PRIMARY KEY (`emp_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
