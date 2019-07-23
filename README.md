@@ -14,3 +14,14 @@ EMPLOYEE TABLE:
 Employee(emp_id,name,designation,qualification,dob,address,gender)
 
 - I'm using phpMyAdmin to create the database, you can use any other MySQL Administrator tool or command line.
+
+## Python Library to connect to MySQL: mysql-connector
+
+- Check out this link on how to install the library
+  https://pynative.com/install-mysql-connector-python/
+
+- I'm also following this exercise, for those who wants an explanation to the commands used here:
+  https://pynative.com/python-database-programming-exercise-with-solution/
+
+
+ 
