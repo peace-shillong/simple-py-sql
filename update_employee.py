@@ -7,11 +7,13 @@ try:
                              database='company',
                              user='root',
                              password='')
+
+   print ("Update Employee Details")
    print ("Enter Employee ID")
-   emp_id=input()
+   emp_id=int(input())
    cursor = conn.cursor()
    print ("Before updating record ")
-   sql_select_query = """select * from employee where id = %d""" % (emp_id)
+   sql_select_query = "select * from employee where emp_id =%s" %(emp_id,)
    cursor.execute(sql_select_query)
    record = cursor.fetchone()
    print (record)
@@ -29,8 +31,8 @@ try:
    print ("Enter Employee Gender(Male/Female)")
    gen=input()
 
-   sql_update_query = """Update employee set name=%s, designation=%s, qualification=%s,dob=%s,address=%s,gender=%s  where id = %d""" %(name,des,qua,dob,addr,gen,emp_id)
-   cursor.execute(sql_update_query)
+   sql_update_query = """Update employee set name=%s, designation=%s, qualification=%s,dob=%s,address=%s,gender=%swhere emp_id = %s""" 
+   cursor.execute(sql_update_query,(name,des,qua,dob,addr,gen,emp_id))
    conn.commit()
    print ("Record Updated successfully ")
    print("After updating record ")
