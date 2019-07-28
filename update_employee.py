@@ -24,7 +24,7 @@ try:
    des=input()
    print ("Enter Employee Qualification")
    qua=input()
-   print ("Enter Employee DOB")
+   print ("Enter Employee DOB(DD-MM-YYYY)")
    dob=input()
    print ("Enter Employee Address")
    addr=input()
